@@ -176,6 +176,7 @@ def player_numbers(team_name)
   else
     away_team_players.each {|p| numbers << away_team_players[:number]}
   end
+  binding.pry
   numbers
 end
 
