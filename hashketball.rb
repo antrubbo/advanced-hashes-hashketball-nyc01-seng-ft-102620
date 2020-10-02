@@ -134,7 +134,7 @@ def num_points_scored(player_name)
   binding.pry
   players.each do |player|
     if player[:player_name] = player_name
-      player_name_stats << player
+      player_name_stats << player == player[:player_name]
     end
     binding.pry
   end
