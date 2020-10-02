@@ -169,8 +169,9 @@ end
 
 def player_numbers(team_name)
   numbers = []
-  home_team_players = []
-  away_team_players = []
+  home_team_players = game_hash[:home][:players]
+  away_team_players = game_hash[:away][:players]
+  binding.pry
 end
 
 
