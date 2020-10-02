@@ -155,6 +155,7 @@ def team_colors(team)
   away_team = []
   home_team << game_hash[:home][:colors]
   away_team << game_hash[:away][:colors]
+  if game_hash
   binding.pry
 end
 
