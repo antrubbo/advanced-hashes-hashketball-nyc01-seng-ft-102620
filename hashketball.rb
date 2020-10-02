@@ -190,14 +190,14 @@ end
 
 def big_shoe_rebounds
   players_shoes = []
-  biggest_foot = nil
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.each do |p|
     players_shoes << p[:shoe]
   end
-  # binding.pry
   players.each do |p|
-    biggest_foot << p[:shoe] == players_shoes.sort[-1]
+    if p[:shoe] == players_shoes.sort[-1]
+      return p[:rebounds]
+    end
   end
 end
 
