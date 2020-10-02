@@ -151,6 +151,7 @@ player_name_stats = []
 end
 
 def team_colors(team)
+  team_names = ""
   team_names = game_hash[:home][:team_name].merge(game_hash[:away][:team_name])
   binding.pry
 end
