@@ -132,24 +132,11 @@ def num_points_scored(player_name)
   player_name_stats = []
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.each do |player|
-    if player[:player_name] == player_name
-      player_name_stats << player == player[:player_name]
+    if player[:player_name] == player_name ? player_name_stats << player == player[:player_name]
+      # player_name_stats << player == player[:player_name]
     end
   end
   return player_name_stats[0][:points]
 end
-
-
-# game_hash.each do |location, team_data|
-  #   team_data.each do |attribute, data|
-  #     data.each do |data_item|
-        
-  #     end
-  #   end
-  # end
-
-# if data_item.is_a?(Array) && data_item[:player_name] == player_name
-        #   points = data_item[:player_name]
-        # end
 
 
