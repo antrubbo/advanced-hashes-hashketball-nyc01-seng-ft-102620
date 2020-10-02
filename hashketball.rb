@@ -171,13 +171,12 @@ def player_numbers(team_name)
   numbers = []
   home_team_players = game_hash[:home][:players]
   away_team_players = game_hash[:away][:players]
-  binding.pry
+  # binding.pry
   if team_name == game_hash[:home][:team_name]
     home_team_players.each {|p| numbers << p[:number]}
   else
     away_team_players.each {|p| numbers << p[:number]}
   end
-  
   numbers
 end
 
