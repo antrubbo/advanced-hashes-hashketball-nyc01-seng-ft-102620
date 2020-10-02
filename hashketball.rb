@@ -179,7 +179,10 @@ def player_numbers(team_name)
   numbers
 end
 
-def player_stats
+def player_stats(name)
+  player = {}
+  game_hash[:home][:players]
+end
 
 
 
