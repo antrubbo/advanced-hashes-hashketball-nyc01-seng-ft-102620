@@ -169,6 +169,8 @@ end
 
 def player_numbers(team_name)
   numbers = []
+  home_team_players = []
+  away_team_players = []
 end
 
 
