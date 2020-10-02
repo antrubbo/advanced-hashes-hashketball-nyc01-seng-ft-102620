@@ -152,7 +152,7 @@ end
 
 def team_colors(team)
   # team_names = ""
-  team_names = game_hash[:home].merge(game_hash[:away])
+  team_names = game_hash[:home][:colors].merge(game_hash[:away][:colors])
   binding.pry
 end
 
