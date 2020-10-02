@@ -190,6 +190,7 @@ end
 
 def big_shoe_rebounds
   players_shoes = []
+  all_shoes = players_shoes.sort
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.each do |p|
     players_shoes << p[:shoe]
