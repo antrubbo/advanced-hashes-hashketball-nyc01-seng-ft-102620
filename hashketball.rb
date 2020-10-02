@@ -184,7 +184,7 @@ def player_stats(name)
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.each do |p|
     if p[:player_name] == name
-      player.merge(p)
+      player << p
     end
   end
   player
