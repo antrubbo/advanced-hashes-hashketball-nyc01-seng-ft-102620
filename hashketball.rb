@@ -195,7 +195,8 @@ def big_shoe_rebounds
   players.each do |p|
     players_shoes << p[:shoe]
   end
-  binding.pry
+  players.each do |p|
+    return p[:rebounds] ==
 end
 
 
