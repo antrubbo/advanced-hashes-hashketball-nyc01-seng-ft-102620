@@ -180,7 +180,7 @@ def player_numbers(team_name)
 end
 
 def player_stats(name)
-  player = {}
+  player = []
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.each do |p|
     if p[:player_name] == name
